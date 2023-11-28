@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/daksh/Desktop/CG_Project/src -I/home/daksh/Desktop/CG_Project/depends -I/home/daksh/Desktop/CG_Project/depends/imgui
+CXX_INCLUDES = -I/home/daksh/Desktop/CG_Project/src -I/home/daksh/Desktop/CG_Project/depends -I/home/daksh/Desktop/CG_Project/depends/imgui -I/home/daksh/Desktop/CG_Project/depends/poisson_disk_sampling
 
 CXX_FLAGS = -g
 

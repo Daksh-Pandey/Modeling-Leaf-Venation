@@ -15,15 +15,6 @@
 ########################
 
 //Value Computed by CMake
-Assignment01_BINARY_DIR:STATIC=/home/daksh/Desktop/CG_Project
-
-//Value Computed by CMake
-Assignment01_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-Assignment01_SOURCE_DIR:STATIC=/home/daksh/Desktop/CG_Project
-
-//Value Computed by CMake
 CG_Project_BINARY_DIR:STATIC=/home/daksh/Desktop/CG_Project
 
 //Value Computed by CMake
@@ -290,26 +281,11 @@ OPENGL_opengl_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libOpenGL.so
 //Path to a file.
 OPENGL_xmesa_INCLUDE_DIR:PATH=OPENGL_xmesa_INCLUDE_DIR-NOTFOUND
 
-//If ON, clang-tidy is used.
-THINKS_CLANG_TIDY:BOOL=OFF
-
-//If ON, tests will be run.
-THINKS_RUN_TESTS:BOOL=OFF
-
 //The directory containing a CMake configuration file for glfw3.
 glfw3_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/glfw3
 
 //The directory containing a CMake configuration file for glm.
 glm_DIR:PATH=/usr/lib/cmake/glm
-
-//Value Computed by CMake
-poisson_disk_sampling_BINARY_DIR:STATIC=/home/daksh/Desktop/CG_Project/poisson-disk-sampling
-
-//Value Computed by CMake
-poisson_disk_sampling_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-poisson_disk_sampling_SOURCE_DIR:STATIC=/home/daksh/Desktop/CG_Project/poisson-disk-sampling
 
 
 ########################
@@ -394,8 +370,6 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
-//Test CMAKE_HAVE_LIBC_PTHREAD
-CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/daksh/Desktop/CG_Project
@@ -467,8 +441,6 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_GLEW:INTERNAL=[/usr/include][/usr/lib/x86_64-linux-gnu/libGLEW.so][v2.2.0()]
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenGL.so][/usr/lib/x86_64-linux-gnu/libGLX.so][/usr/include][c ][v()]
-//Details about finding Threads
-FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GLEW_INCLUDE_DIR
 GLEW_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GLEW_SHARED_LIBRARY_DEBUG

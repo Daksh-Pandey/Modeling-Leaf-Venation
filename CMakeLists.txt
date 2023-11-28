@@ -20,7 +20,7 @@ set(SOURCES
 	"depends/imgui/imgui_demo.cpp"
 	"depends/imgui/imgui_draw.cpp"
 	"depends/imgui/imgui_widgets.cpp"
-	"depends/poisson_disk_sampling.h"
+	"depends/poisson_disk_sampling/poisson_disk_sampling.h"
 	)
 
 add_executable(${TARGET} ${SOURCES})
@@ -29,6 +29,7 @@ target_include_directories(${TARGET} PRIVATE
 	${PROJECT_SOURCE_DIR}/src
 	${PROJECT_SOURCE_DIR}/depends
 	${PROJECT_SOURCE_DIR}/depends/imgui
+	${PROJECT_SOURCE_DIR}/depends/poisson_disk_sampling
 	${GLFW_INCLUDE_DIRS}
 	${OPENGL_INCLUDE_DIR}
 	${GLM_INCLUDE_DIRS/../include}
