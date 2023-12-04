@@ -321,6 +321,30 @@ src/utils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_Project.dir/build.make CMakeFiles/CG_Project.dir/src/utils.cpp.s
 .PHONY : src/utils.cpp.s
 
+src/veinnode.o: src/veinnode.cpp.o
+.PHONY : src/veinnode.o
+
+# target to build an object file
+src/veinnode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_Project.dir/build.make CMakeFiles/CG_Project.dir/src/veinnode.cpp.o
+.PHONY : src/veinnode.cpp.o
+
+src/veinnode.i: src/veinnode.cpp.i
+.PHONY : src/veinnode.i
+
+# target to preprocess a source file
+src/veinnode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_Project.dir/build.make CMakeFiles/CG_Project.dir/src/veinnode.cpp.i
+.PHONY : src/veinnode.cpp.i
+
+src/veinnode.s: src/veinnode.cpp.s
+.PHONY : src/veinnode.s
+
+# target to generate assembly for a file
+src/veinnode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_Project.dir/build.make CMakeFiles/CG_Project.dir/src/veinnode.cpp.s
+.PHONY : src/veinnode.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -354,6 +378,9 @@ help:
 	@echo "... src/utils.o"
 	@echo "... src/utils.i"
 	@echo "... src/utils.s"
+	@echo "... src/veinnode.o"
+	@echo "... src/veinnode.i"
+	@echo "... src/veinnode.s"
 .PHONY : help
 
 

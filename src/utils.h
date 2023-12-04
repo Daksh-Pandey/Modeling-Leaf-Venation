@@ -1,20 +1,11 @@
 #include "imgui.h"
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
-#include "poisson_disk_sampling.h"
 #include <stdio.h>
 #include <iostream>
 #include <vector>
 #include <array>
 #include <cmath>
-
-#include <glm/vec3.hpp> // glm::vec3
-#include <glm/vec4.hpp> // glm::vec4
-#include <glm/mat4x4.hpp> // glm::mat4
-#include <glm/glm.hpp>
-#include <glm/gtc/type_ptr.hpp>
-#include <glm/gtx/rotate_vector.hpp>
-#include <glm/gtx/vector_angle.hpp>
 
 // About Desktop OpenGL function loaders:
 //  Modern desktop OpenGL doesn't have a standard portable header file to load OpenGL function pointers.

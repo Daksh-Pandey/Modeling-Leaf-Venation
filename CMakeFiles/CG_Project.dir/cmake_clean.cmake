@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CG_Project.dir/src/main.cpp.o.d"
   "CMakeFiles/CG_Project.dir/src/utils.cpp.o"
   "CMakeFiles/CG_Project.dir/src/utils.cpp.o.d"
+  "CMakeFiles/CG_Project.dir/src/veinnode.cpp.o"
+  "CMakeFiles/CG_Project.dir/src/veinnode.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

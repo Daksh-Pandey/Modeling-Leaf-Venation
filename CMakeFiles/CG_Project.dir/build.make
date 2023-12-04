@@ -97,10 +97,24 @@ CMakeFiles/CG_Project.dir/src/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CG_Project.dir/src/utils.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/daksh/Desktop/CG_Project/src/utils.cpp -o CMakeFiles/CG_Project.dir/src/utils.cpp.s
 
+CMakeFiles/CG_Project.dir/src/veinnode.cpp.o: CMakeFiles/CG_Project.dir/flags.make
+CMakeFiles/CG_Project.dir/src/veinnode.cpp.o: src/veinnode.cpp
+CMakeFiles/CG_Project.dir/src/veinnode.cpp.o: CMakeFiles/CG_Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/daksh/Desktop/CG_Project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CG_Project.dir/src/veinnode.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CG_Project.dir/src/veinnode.cpp.o -MF CMakeFiles/CG_Project.dir/src/veinnode.cpp.o.d -o CMakeFiles/CG_Project.dir/src/veinnode.cpp.o -c /home/daksh/Desktop/CG_Project/src/veinnode.cpp
+
+CMakeFiles/CG_Project.dir/src/veinnode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CG_Project.dir/src/veinnode.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/daksh/Desktop/CG_Project/src/veinnode.cpp > CMakeFiles/CG_Project.dir/src/veinnode.cpp.i
+
+CMakeFiles/CG_Project.dir/src/veinnode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CG_Project.dir/src/veinnode.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/daksh/Desktop/CG_Project/src/veinnode.cpp -o CMakeFiles/CG_Project.dir/src/veinnode.cpp.s
+
 CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_glfw.cpp.o: CMakeFiles/CG_Project.dir/flags.make
 CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_glfw.cpp.o: depends/imgui/imgui_impl_glfw.cpp
 CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_glfw.cpp.o: CMakeFiles/CG_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/daksh/Desktop/CG_Project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_glfw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/daksh/Desktop/CG_Project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_glfw.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_glfw.cpp.o -MF CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_glfw.cpp.o.d -o CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_glfw.cpp.o -c /home/daksh/Desktop/CG_Project/depends/imgui/imgui_impl_glfw.cpp
 
 CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_glfw.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_glfw.cpp.s: cmake_force
 CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/CG_Project.dir/flags.make
 CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_opengl3.cpp.o: depends/imgui/imgui_impl_opengl3.cpp
 CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/CG_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/daksh/Desktop/CG_Project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_opengl3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/daksh/Desktop/CG_Project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_opengl3.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_opengl3.cpp.o -MF CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_opengl3.cpp.o -c /home/daksh/Desktop/CG_Project/depends/imgui/imgui_impl_opengl3.cpp
 
 CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_opengl3.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_opengl3.cpp.s: cmake_force
 CMakeFiles/CG_Project.dir/depends/imgui/imgui.cpp.o: CMakeFiles/CG_Project.dir/flags.make
 CMakeFiles/CG_Project.dir/depends/imgui/imgui.cpp.o: depends/imgui/imgui.cpp
 CMakeFiles/CG_Project.dir/depends/imgui/imgui.cpp.o: CMakeFiles/CG_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/daksh/Desktop/CG_Project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CG_Project.dir/depends/imgui/imgui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/daksh/Desktop/CG_Project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CG_Project.dir/depends/imgui/imgui.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CG_Project.dir/depends/imgui/imgui.cpp.o -MF CMakeFiles/CG_Project.dir/depends/imgui/imgui.cpp.o.d -o CMakeFiles/CG_Project.dir/depends/imgui/imgui.cpp.o -c /home/daksh/Desktop/CG_Project/depends/imgui/imgui.cpp
 
 CMakeFiles/CG_Project.dir/depends/imgui/imgui.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/CG_Project.dir/depends/imgui/imgui.cpp.s: cmake_force
 CMakeFiles/CG_Project.dir/depends/imgui/imgui_demo.cpp.o: CMakeFiles/CG_Project.dir/flags.make
 CMakeFiles/CG_Project.dir/depends/imgui/imgui_demo.cpp.o: depends/imgui/imgui_demo.cpp
 CMakeFiles/CG_Project.dir/depends/imgui/imgui_demo.cpp.o: CMakeFiles/CG_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/daksh/Desktop/CG_Project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CG_Project.dir/depends/imgui/imgui_demo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/daksh/Desktop/CG_Project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CG_Project.dir/depends/imgui/imgui_demo.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CG_Project.dir/depends/imgui/imgui_demo.cpp.o -MF CMakeFiles/CG_Project.dir/depends/imgui/imgui_demo.cpp.o.d -o CMakeFiles/CG_Project.dir/depends/imgui/imgui_demo.cpp.o -c /home/daksh/Desktop/CG_Project/depends/imgui/imgui_demo.cpp
 
 CMakeFiles/CG_Project.dir/depends/imgui/imgui_demo.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/CG_Project.dir/depends/imgui/imgui_demo.cpp.s: cmake_force
 CMakeFiles/CG_Project.dir/depends/imgui/imgui_draw.cpp.o: CMakeFiles/CG_Project.dir/flags.make
 CMakeFiles/CG_Project.dir/depends/imgui/imgui_draw.cpp.o: depends/imgui/imgui_draw.cpp
 CMakeFiles/CG_Project.dir/depends/imgui/imgui_draw.cpp.o: CMakeFiles/CG_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/daksh/Desktop/CG_Project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CG_Project.dir/depends/imgui/imgui_draw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/daksh/Desktop/CG_Project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/CG_Project.dir/depends/imgui/imgui_draw.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CG_Project.dir/depends/imgui/imgui_draw.cpp.o -MF CMakeFiles/CG_Project.dir/depends/imgui/imgui_draw.cpp.o.d -o CMakeFiles/CG_Project.dir/depends/imgui/imgui_draw.cpp.o -c /home/daksh/Desktop/CG_Project/depends/imgui/imgui_draw.cpp
 
 CMakeFiles/CG_Project.dir/depends/imgui/imgui_draw.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/CG_Project.dir/depends/imgui/imgui_draw.cpp.s: cmake_force
 CMakeFiles/CG_Project.dir/depends/imgui/imgui_widgets.cpp.o: CMakeFiles/CG_Project.dir/flags.make
 CMakeFiles/CG_Project.dir/depends/imgui/imgui_widgets.cpp.o: depends/imgui/imgui_widgets.cpp
 CMakeFiles/CG_Project.dir/depends/imgui/imgui_widgets.cpp.o: CMakeFiles/CG_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/daksh/Desktop/CG_Project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/CG_Project.dir/depends/imgui/imgui_widgets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/daksh/Desktop/CG_Project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/CG_Project.dir/depends/imgui/imgui_widgets.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CG_Project.dir/depends/imgui/imgui_widgets.cpp.o -MF CMakeFiles/CG_Project.dir/depends/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/CG_Project.dir/depends/imgui/imgui_widgets.cpp.o -c /home/daksh/Desktop/CG_Project/depends/imgui/imgui_widgets.cpp
 
 CMakeFiles/CG_Project.dir/depends/imgui/imgui_widgets.cpp.i: cmake_force
@@ -185,6 +199,7 @@ CMakeFiles/CG_Project.dir/depends/imgui/imgui_widgets.cpp.s: cmake_force
 CG_Project_OBJECTS = \
 "CMakeFiles/CG_Project.dir/src/main.cpp.o" \
 "CMakeFiles/CG_Project.dir/src/utils.cpp.o" \
+"CMakeFiles/CG_Project.dir/src/veinnode.cpp.o" \
 "CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_glfw.cpp.o" \
 "CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_opengl3.cpp.o" \
 "CMakeFiles/CG_Project.dir/depends/imgui/imgui.cpp.o" \
@@ -197,6 +212,7 @@ CG_Project_EXTERNAL_OBJECTS =
 
 CG_Project: CMakeFiles/CG_Project.dir/src/main.cpp.o
 CG_Project: CMakeFiles/CG_Project.dir/src/utils.cpp.o
+CG_Project: CMakeFiles/CG_Project.dir/src/veinnode.cpp.o
 CG_Project: CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_glfw.cpp.o
 CG_Project: CMakeFiles/CG_Project.dir/depends/imgui/imgui_impl_opengl3.cpp.o
 CG_Project: CMakeFiles/CG_Project.dir/depends/imgui/imgui.cpp.o
@@ -209,7 +225,7 @@ CG_Project: /usr/lib/x86_64-linux-gnu/libGLU.so
 CG_Project: /usr/lib/x86_64-linux-gnu/libglfw.so.3.3
 CG_Project: /usr/lib/x86_64-linux-gnu/libGLEW.so
 CG_Project: CMakeFiles/CG_Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/daksh/Desktop/CG_Project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable CG_Project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/daksh/Desktop/CG_Project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable CG_Project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CG_Project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
