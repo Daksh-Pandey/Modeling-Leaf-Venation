@@ -23,10 +23,10 @@ float initGrowth = 1e-4f;
 float uniformGrowth = initGrowth; // simulate growth throughout leaf
 float marginGrowth = initGrowth; // simulate leaf margin growth
 float smallChange = 1e-6f; // change in growth per frame
-float srcSrcDist = 5.0f;
-float srcNodeDist = 4.0f;
+float srcSrcDist = 20.0f;
+float srcNodeDist = 20.0f;
 float nodeNodeDist = 2.0f;
-float killDist = 5.0f;
+float killDist = 10.0f;
 float initUnitDist = 1.0f;
 float unitDist = initUnitDist;
 float petiole_x = 0.0f, petiole_y = 0.0f;
@@ -93,7 +93,7 @@ void genAuxinSources(){
     float y_min = -y_max;
     array<float, 2> Xmin = {x_min, y_min};
     array<float, 2> Xmax = {x_max, y_max};
-    vector<array<float, 2>> poissonRaw = thinks::PoissonDiskSampling(srcSrcDist * unitDist, Xmin, Xmax, 60, rand() % 1000);
+    vector<array<float, 2>> poissonRaw = thinks::PoissonDiskSampling(srcSrcDist * unitDist, Xmin, Xmax, 60); //, rand() % 1000);
     for (auto p : poissonRaw){
         float angle = atan(p[1] / p[0]);
         if ((p[0] < 0 && p[1] > 0) || (p[0] < 0 && p[1] < 0)){ // 2nd & 3rd quadrant
