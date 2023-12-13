@@ -9,6 +9,7 @@ class VeinNode{
     private:
         float x;
         float y;
+        VeinNode* parent = nullptr;
         std::vector<VeinNode*> children;
         std::vector<std::pair<float,float>> auxinSrcs;
     public:
@@ -41,5 +42,6 @@ void unitVector(float& x, float& y);
 VeinNode* findNearestNode(VeinNode* root, float& aux_x, float& aux_y);
 void flattenTree(VeinNode* root, std::vector<float>& nodePos);
 void placeNewNodes(VeinNode* root, float newNodeDist);
+bool relativeNeighbourCheck(VeinNode* root, float& vein_x, float& vein_y, float& aux_x, float& aux_y);
 
 #endif

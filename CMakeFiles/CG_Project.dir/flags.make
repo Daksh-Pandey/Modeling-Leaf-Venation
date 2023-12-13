@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/daksh/Desktop/CG_Project/src -I/home/daksh/Desktop/CG_Project/depends -I/home/daksh/Desktop/CG_Project/depends/imgui -I/home/daksh/Desktop/CG_Project/depends/poisson_disk_sampling
+CXX_INCLUDES = -I/home/daksh/Desktop/Team16_Daksh_2021036_Final/CG_Project/src -I/home/daksh/Desktop/Team16_Daksh_2021036_Final/CG_Project/depends -I/home/daksh/Desktop/Team16_Daksh_2021036_Final/CG_Project/depends/imgui -I/home/daksh/Desktop/Team16_Daksh_2021036_Final/CG_Project/depends/poisson_disk_sampling -I/home/daksh/Desktop/Team16_Daksh_2021036_Final/CG_Project/depends/Polyline2D/include
 
 CXX_FLAGS = -g
 

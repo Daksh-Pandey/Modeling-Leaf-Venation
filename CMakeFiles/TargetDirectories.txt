@@ -1,3 +1,3 @@
-/home/daksh/Desktop/CG_Project/CMakeFiles/CG_Project.dir
-/home/daksh/Desktop/CG_Project/CMakeFiles/edit_cache.dir
-/home/daksh/Desktop/CG_Project/CMakeFiles/rebuild_cache.dir
+/home/daksh/Desktop/Team16_Daksh_2021036_Final/CG_Project/CMakeFiles/CG_Project.dir
+/home/daksh/Desktop/Team16_Daksh_2021036_Final/CG_Project/CMakeFiles/edit_cache.dir
+/home/daksh/Desktop/Team16_Daksh_2021036_Final/CG_Project/CMakeFiles/rebuild_cache.dir

@@ -607,6 +607,9 @@ CMakeFiles/CG_Project.dir/depends/imgui/imgui_widgets.cpp.o: depends/imgui/imgui
   /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h
 
 CMakeFiles/CG_Project.dir/src/main.cpp.o: src/main.cpp \
+  depends/Polyline2D/include/LineSegment.h \
+  depends/Polyline2D/include/Polyline2D.h \
+  depends/Polyline2D/include/Vec2.h \
   depends/imgui/imconfig.h \
   depends/imgui/imgui.h \
   depends/imgui/imgui_impl_glfw.h \
@@ -686,6 +689,7 @@ CMakeFiles/CG_Project.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/bits/streambuf.tcc \
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/bits/string_view.tcc \
@@ -725,9 +729,11 @@ CMakeFiles/CG_Project.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/11/iosfwd \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/istream \
+  /usr/include/c++/11/iterator \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/new \
   /usr/include/c++/11/numeric \
+  /usr/include/c++/11/optional \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/pstl/execution_defs.h \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
@@ -1522,8 +1528,6 @@ src/veinnode.cpp:
 
 /usr/include/glm/ext/vector_float2.hpp:
 
-/usr/include/glm/ext/vector_float1_precision.hpp:
-
 /usr/include/glm/gtc/quaternion.inl:
 
 /usr/include/glm/ext/vector_float1.hpp:
@@ -1698,6 +1702,10 @@ src/veinnode.cpp:
 
 /usr/include/glm/detail/func_geometric.inl:
 
+/usr/include/glm/detail/_vectorize.hpp:
+
+/usr/include/glm/detail/_fixes.hpp:
+
 /usr/include/c++/11/tuple:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
@@ -1824,10 +1832,6 @@ depends/imgui/imgui_impl_opengl3.h:
 
 /usr/include/c++/11/tr1/beta_function.tcc:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
-
-/usr/include/c++/11/bits/specfun.h:
-
 /usr/include/c++/11/pstl/execution_defs.h:
 
 src/utils.cpp:
@@ -1938,8 +1942,6 @@ depends/imgui/imgui_internal.h:
 
 /usr/include/c++/11/ext/alloc_traits.h:
 
-/usr/include/glm/detail/_vectorize.hpp:
-
 /usr/include/c++/11/bits/charconv.h:
 
 /usr/include/c++/11/tr1/legendre_function.tcc:
@@ -1967,6 +1969,8 @@ depends/imgui/imstb_textedit.h:
 /usr/include/c++/11/bits/ptr_traits.h:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+depends/Polyline2D/include/LineSegment.h:
 
 /usr/include/c++/11/bits/cpp_type_traits.h:
 
@@ -2060,6 +2064,8 @@ depends/imgui/imgui.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
+/usr/include/c++/11/bits/stream_iterator.h:
+
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/c++/11/bits/exception_defines.h:
@@ -2087,6 +2093,10 @@ depends/imgui/imgui.h:
 /usr/include/c++/11/math.h:
 
 /usr/include/c++/11/bits/basic_ios.h:
+
+/usr/include/glm/detail/compute_common.hpp:
+
+/usr/include/linux/limits.h:
 
 /usr/include/glm/detail/type_mat4x4.hpp:
 
@@ -2194,6 +2204,16 @@ depends/imgui/imgui_impl_glfw.h:
 
 /usr/include/c++/11/bits/ios_base.h:
 
+/usr/include/glm/ext/vector_float1_precision.hpp:
+
+depends/Polyline2D/include/Polyline2D.h:
+
+depends/Polyline2D/include/Vec2.h:
+
+/usr/include/wchar.h:
+
+/usr/include/c++/11/vector:
+
 depends/poisson_disk_sampling/poisson_disk_sampling.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
@@ -2300,6 +2320,12 @@ depends/imgui/imgui_draw.cpp:
 
 /usr/include/c++/11/bits/stl_function.h:
 
+/usr/include/glm/detail/func_integer.inl:
+
+/usr/include/glm/common.hpp:
+
+/usr/include/c++/11/bits/stl_heap.h:
+
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
 /usr/include/c++/11/functional:
@@ -2340,7 +2366,15 @@ depends/imgui/imgui_draw.cpp:
 
 /usr/include/c++/11/istream:
 
+/usr/include/c++/11/iterator:
+
 /usr/include/c++/11/new:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
+
+/usr/include/c++/11/bits/specfun.h:
+
+/usr/include/c++/11/optional:
 
 /usr/include/asm-generic/errno.h:
 
@@ -2356,22 +2390,6 @@ depends/imgui/imgui_draw.cpp:
 
 /usr/include/c++/11/utility:
 
-/usr/include/wchar.h:
-
-/usr/include/c++/11/vector:
-
 /usr/include/c++/11/bits/std_function.h:
 
 /usr/include/errno.h:
-
-/usr/include/glm/detail/func_integer.inl:
-
-/usr/include/c++/11/bits/stl_heap.h:
-
-/usr/include/glm/common.hpp:
-
-/usr/include/glm/detail/_fixes.hpp:
-
-/usr/include/linux/limits.h:
-
-/usr/include/glm/detail/compute_common.hpp:

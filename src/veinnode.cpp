@@ -1,5 +1,7 @@
 #include "veinnode.h"
 
+using namespace std;
+
 float euclidDistance(VeinNode* node, float aux_x, float aux_y){
     return euclidDistance(node->getX(), node->getY(), aux_x, aux_y);
 }
@@ -25,6 +27,7 @@ void VeinNode::placeNewChildNode(float D){
     }
     unitVector(sum_x, sum_y);
     VeinNode* newChild = new VeinNode(x + D * sum_x, y + D * sum_y);
+    newChild->parent = this;
     this->children.push_back(newChild);
 }
 
@@ -77,4 +80,20 @@ void placeNewNodes(VeinNode* root, float newNodeDist){
     for (VeinNode* nbr : root->getChildren()){
         placeNewNodes(nbr, newNodeDist);
     }
+}
+
+bool relativeNeighbourCheck(VeinNode* root, float& vein_x, float& vein_y, float& aux_x, float& aux_y){
+    if (!root) return false;
+    float srcNodeDist = euclidDistance(vein_x, vein_y, aux_x, aux_y);
+    float rootNodeDist = euclidDistance(root, aux_x, aux_y);
+    float rootSrcDist = euclidDistance(root, aux_x, aux_y);
+    bool check = srcNodeDist < max(rootNodeDist, rootSrcDist);
+    if (!root->hasChildren()){
+        return check;
+    }
+    for (VeinNode* nbr : root->getChildren()){
+        bool nbr_check = relativeNeighbourCheck(nbr, vein_x, vein_y, aux_x, aux_y);
+        check &= nbr_check;
+    }
+    return check;
 }

@@ -19,14 +19,15 @@ using namespace std;
 int window_width = 1000, window_height = 1000;
 vector<float> leafMargin;
 vector<float> auxinSources;
-float initGrowth = 1e-4f;
+vector<float> nodesDisplay;
+float initGrowth = 1e-3f;
 float uniformGrowth = initGrowth; // simulate growth throughout leaf
 float marginGrowth = initGrowth; // simulate leaf margin growth
 float smallChange = 1e-6f; // change in growth per frame
-float srcSrcDist = 20.0f;
-float srcNodeDist = 20.0f;
-float nodeNodeDist = 2.0f;
-float killDist = 10.0f;
+float srcSrcDist = 1.0f;
+float srcNodeDist = 1.0f;
+float nodeNodeDist = 1.0f;
+float killDist = 1.0f;
 float initUnitDist = 1.0f;
 float unitDist = initUnitDist;
 float petiole_x = 0.0f, petiole_y = 0.0f;
@@ -93,7 +94,7 @@ void genAuxinSources(){
     float y_min = -y_max;
     array<float, 2> Xmin = {x_min, y_min};
     array<float, 2> Xmax = {x_max, y_max};
-    vector<array<float, 2>> poissonRaw = thinks::PoissonDiskSampling(srcSrcDist * unitDist, Xmin, Xmax, 60); //, rand() % 1000);
+    vector<array<float, 2>> poissonRaw = thinks::PoissonDiskSampling(srcSrcDist * unitDist, Xmin, Xmax, rand() % 1000);
     for (auto p : poissonRaw){
         float angle = atan(p[1] / p[0]);
         if ((p[0] < 0 && p[1] > 0) || (p[0] < 0 && p[1] < 0)){ // 2nd & 3rd quadrant
@@ -119,20 +120,20 @@ void genAuxinSources(){
                 auxinSources.push_back(p[0]);
                 auxinSources.push_back(p[1]);
                 auxinSources.push_back(0.0);
-                nearestNode->addNewAuxinSrc(p[0], p[1]);
             }
         }
     }
 }
 
-void removeTooCloseSrcs(){
+void findNearestNodes(){
     vector<float> newAuxinSrcs;
     for (int i = 0; i < auxinSources.size(); i += 3){
         VeinNode* tmp = findNearestNode(petiole, auxinSources[i], auxinSources[i+1]);
-        if (euclidDistance(tmp, auxinSources[i], auxinSources[i+1]) > srcNodeDist * unitDist){
+        if (euclidDistance(tmp, auxinSources[i], auxinSources[i+1]) > killDist * unitDist){
             newAuxinSrcs.push_back(auxinSources[i]);
             newAuxinSrcs.push_back(auxinSources[i+1]);
             newAuxinSrcs.push_back(0.0f);
+            tmp->addNewAuxinSrc(auxinSources[i], auxinSources[i+1]);
         }
     }
     auxinSources = newAuxinSrcs;
@@ -168,7 +169,7 @@ int main(int, char *argv[])
     glGenVertexArrays(1, &VAO_node);
     glGenBuffers(1, &VBO_node);
 
-    vector<float> nodesDisplay;
+    bool display_srcs = false;
 
     drawLeafMargin();
 
@@ -191,6 +192,8 @@ int main(int, char *argv[])
         glClear(GL_COLOR_BUFFER_BIT);
 
         genAuxinSources();
+
+        findNearestNodes();
 
         nodesDisplay.clear();
         flattenTree(petiole, nodesDisplay);
@@ -218,8 +221,8 @@ int main(int, char *argv[])
         glBindVertexArray(VAO_margin);
         glDrawArrays(GL_LINE_LOOP, 0, leafMargin.size() / 3);
 
-        // glBindVertexArray(VAO_auxinSrc);
-        // glDrawArrays(GL_POINTS, 0, auxinSources.size() / 3);
+        glBindVertexArray(VAO_auxinSrc);
+        glDrawArrays(GL_POINTS, 0, auxinSources.size() / 3);
 
         glBindVertexArray(VAO_node);
         glDrawArrays(GL_LINES, 0, nodesDisplay.size() / 3);
@@ -227,8 +230,6 @@ int main(int, char *argv[])
         glUseProgram(0);
         
         placeNewNodes(petiole, nodeNodeDist);
-
-        removeTooCloseSrcs();
 
         growLeafMargin();
 

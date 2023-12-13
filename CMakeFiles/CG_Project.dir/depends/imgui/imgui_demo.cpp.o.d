@@ -1,8 +1,8 @@
 CMakeFiles/CG_Project.dir/depends/imgui/imgui_demo.cpp.o: \
- /home/daksh/Desktop/CG_Project/depends/imgui/imgui_demo.cpp \
+ /home/daksh/Desktop/Team16_Daksh_2021036_Final/CG_Project/depends/imgui/imgui_demo.cpp \
  /usr/include/stdc-predef.h \
- /home/daksh/Desktop/CG_Project/depends/imgui/imgui.h \
- /home/daksh/Desktop/CG_Project/depends/imgui/imconfig.h \
+ /home/daksh/Desktop/Team16_Daksh_2021036_Final/CG_Project/depends/imgui/imgui.h \
+ /home/daksh/Desktop/Team16_Daksh_2021036_Final/CG_Project/depends/imgui/imconfig.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h /usr/include/string.h \
