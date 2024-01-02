@@ -1,5 +1,5 @@
 # Modeling-Leaf-Venation
-![Screenshot from 2023-12-13 11-53-34](https://github.com/Daksh-Pandey/Modeling-Leaf-Venation/assets/108348551/3a5c2a43-f0a2-49aa-89a8-89492964268f)
+![Screenshot from 2023-12-13 11-53-34](https://github.com/Daksh-Pandey/Modeling-Leaf-Venation/assets/108348551/73c1aca7-89ab-4901-a5ae-51e123e59e76)
 ![Screenshot from 2023-12-13 14-39-25](https://github.com/Daksh-Pandey/Modeling-Leaf-Venation/assets/108348551/43378ced-bb6c-4de4-8e5c-5ba6b99791f0)
 
 ### Tech-stack:
