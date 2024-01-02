@@ -15,4 +15,5 @@ The aim of this project is to try to model different venation patterns in a vari
 * Next, veins grow towards their nearest auxin source neighbours.
 * After this, the auxin sources that got too close to vein nodes are removed.
 * Finally, the leaf margin grows.
+
 This project was done by me as the course project for Computer Graphics at IIITD.
